@@ -1,5 +1,6 @@
 #include "LogLevel.h"
 #include <iostream>
+#include <string>
 
 const char* LogLevel::ToString(LogLevel::Level level)
 {
@@ -29,7 +30,7 @@ const LogLevel::Level LogLevel::FromString(const std::string&str)
     XX(WARN, warn)
     XX(ERROR, error)
     XX(FATAL, fatal)
-#undef XX
+#undef XX    
     return LogLevel::UNKNOWN;
 }
 
